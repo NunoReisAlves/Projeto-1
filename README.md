@@ -108,4 +108,24 @@ Pasta usada para guardar os mapas do jogo (`maps`) e os sprites para os personag
 ______________
 `SuperMario\Map`
 
-(TO DO)
+Pasta onde ficam os ficheiros responsaveis pelos mapas.
+
+- `Map.cs`: Responsável pela geraçao do mapa e o background
+- `Map1_1.cs`: Responsável pela criação do personagem e de diversos items e inimigos do primeiro mapa do jogo.
+
+______________
+`SuperMario\Properties`
+
+Guarda informações sobre o jogo no ficheiro `AssemblyInfo.cs`
+
+______________
+`SuperMario\Sprite`
+
+Nesta pasta é onde estão guardados os vários ficheiros relacionados com os objetos e as suas sprites
+
+Trabalho feito por
+------------------
+
+- José Silva 21076
+- Nuno Alves 31181
+- Joana Sousa 34976
