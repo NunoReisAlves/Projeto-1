@@ -56,16 +56,6 @@ public class RangedEnemy : Enemy
 
 A classe `RangedEnemy` herda características da classe `Enemy`, evitando repetição de código e facilitando futuras expansões.
 
----
-
-### Estrutura Orientada a Objetos
-
-Cada entidade do jogo possui a sua própria classe, permitindo separar funcionalidades de forma mais clara.
-
-Esta abordagem melhora:
-- organização do projeto;
-- leitura do código;
-- evolução futura do jogo.
 
 Pontos Fracos
 ---------------
