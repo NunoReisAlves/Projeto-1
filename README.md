@@ -46,9 +46,6 @@ Esta divisão facilita:
 ### Uso de Herança
 
 O projeto utiliza herança para reaproveitar funcionalidades entre diferentes classes de inimigos.
-
-Exemplo:
-
 ```csharp
 public class RangedEnemy : Enemy
 {
