@@ -21,12 +21,54 @@ Ideia Geral
 - Draw trata de desenhar os sprites no ecrã
 7. Todos estes elementos (sprites, movimento, input e colisões) funcionam em conjunto para definir o comportamento do jogo
 
-Pontos Fortes
---------------
+## Pontos Fortes
 
-1. Há organização das scripts
-2. São usadas classes
-3. Loop de jogo Update/Draw segue o padrão em monogame e evita muitos bugs no futuro
+### Organização por Classes
+
+O projeto encontra-se dividido em várias classes com responsabilidades específicas, tornando o código mais organizado e fácil de manter.
+
+| Classe | Responsabilidade |
+|---|---|
+| `Enemy.cs` | Lógica base dos inimigos |
+| `BossEnemy.cs` | Inimigo principal com animações |
+| `RangedEnemy.cs` | Inimigo com ataques à distância |
+| `PlayerAttack.cs` | Sistema de ataque do jogador |
+| `ExperienceGem.cs` | Sistema de experiência |
+| `Wall.cs` / `BrownWall.cs` | Obstáculos e colisões |
+
+Esta divisão facilita:
+- manutenção do código;
+- reutilização de funcionalidades;
+- adição de novas entidades.
+
+---
+
+### Uso de Herança
+
+O projeto utiliza herança para reaproveitar funcionalidades entre diferentes classes de inimigos.
+
+Exemplo:
+
+```csharp
+public class RangedEnemy : Enemy
+{
+    private float _attackTimer = 0.0f;
+    private float _attackInterval = 2.5f;
+}
+```
+
+A classe `RangedEnemy` herda características da classe `Enemy`, evitando repetição de código e facilitando futuras expansões.
+
+---
+
+### Estrutura Orientada a Objetos
+
+Cada entidade do jogo possui a sua própria classe, permitindo separar funcionalidades de forma mais clara.
+
+Esta abordagem melhora:
+- organização do projeto;
+- leitura do código;
+- evolução futura do jogo.
 
 Pontos Fracos
 ---------------
